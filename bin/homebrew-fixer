@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+[ $(getent group brew) ] || groupadd brew
+
+chgrp -R brew $(brew --prefix)/*
+
+chmod -R g+w $(brew --prefix)/*
