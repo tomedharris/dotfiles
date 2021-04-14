@@ -1,1 +1,7 @@
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+
+set visualbell
+set noerrorbells
+
 imap jj <Esc>
+set timeoutlen=500
