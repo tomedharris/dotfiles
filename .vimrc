@@ -7,6 +7,8 @@ set tabstop=4                       " number of visual spaces per tab
 set shiftwidth=4                    " when indenting with '>', use 4 spaces width
 set expandtab                       " tabs are spaces
 set directory=$HOME/.vim/backups/   " default directory for backups
+set splitright
+set splitbelow
 
 set mouse=a                         " enable mouse in all modes
 
@@ -14,6 +16,11 @@ set hlsearch
 imap jj <Esc>
 
 set nocompatible                    " make Vim more useful
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " ensure backup directory exists
 silent execute '!mkdir -p $HOME/.vim/backups'
