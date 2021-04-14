@@ -28,18 +28,29 @@ endif
 filetype off
 call plug#begin('~/.vim/plugged')
 
+Plug 'sheerun/vim-polyglot'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-fugitive'
+Plug 'joshdick/onedark.vim'
 
 Plug 'scrooloose/nerdtree'
     nnoremap <Leader>n :NERDTreeToggle<CR>
     let NERDTreeChDirMode=1
 
 Plug 'tpope/vim-surround'
+Plug 'bling/vim-airline'
 
 Plug 'Raimondi/delimitMate'
     let delimitMate_expand_cr = 1
     let g:delimitMate_expand_space = 1
+
+Plug 'vim-airline/vim-airline-themes'
+    set laststatus=2
+    let g:airline_powerline_fonts = 0
+    let g:airline_theme = 'onedark'
+
+Plug 'airblade/vim-gitgutter'
+    let g:gitgutter_sign_modified = '┄'
 
 Plug 'airblade/vim-gitgutter'
     let g:gitgutter_sign_modified = '┄'
@@ -60,3 +71,5 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 filetype plugin indent on
+
+colorscheme onedark
