@@ -23,6 +23,6 @@ return {
       "<leader>fg",
       function() require('fzf-lua').grep_project() end,
       desc="Find files in project directory with grep"
-    }  
+    }
   }
 }
