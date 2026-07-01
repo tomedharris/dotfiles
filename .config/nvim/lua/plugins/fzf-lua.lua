@@ -10,19 +10,9 @@ return {
   ---@diagnostic enable: missing-fields
   keys = {
     {
-      "<leader>fa",
-      function() require('fzf-lua').files() end,
+      "<leader>f",
+      function() require('fzf-lua').global() end,
       desc="Find all files in project directory"
-    },
-    {
-      "<leader>ff",
-      function() require('fzf-lua').git_files() end,
-      desc="Find files in project directory tracked by git"
-    },
-    {
-      "<leader>fg",
-      function() require('fzf-lua').grep_project() end,
-      desc="Find files in project directory with grep"
     }
   }
 }

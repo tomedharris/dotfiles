@@ -17,5 +17,5 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Mouse mode
-vim.opt.mouse = "a"       
+vim.opt.mouse = "a"
 
