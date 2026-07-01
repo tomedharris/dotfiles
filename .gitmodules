@@ -1,0 +1,12 @@
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".tmux/plugins/tmux-pain-control"]
+	path = .tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control
+[submodule ".tmux/plugins/tmux-dotbar"]
+	path = .tmux/plugins/tmux-dotbar
+	url = https://github.com/tmux-plugins/tmux-dotbar
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
